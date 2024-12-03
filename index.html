@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="A palette edtior for the static sprites of Skullgirls Mobile.">
+    <title>Skullgirls Mobile Palette Editor</title>
+    <link rel="shortcut icon" type="image/png" href="icon/notblight.png">
+    <link rel="stylesheet" href="index.css"></link>
+    <script src="library/jszip/jszip.min.js"></script>
+    <script src="library/FileSaver-js/FileSaver.min.js"></script>
+    <script src="polyfill.js"></script>
+    <script src="directory.js"></script>
+    <script src="index.js"></script>
+</head>
+<body>
+    <div class="section" id="left">
+        <div id="basic">
+            <h1>
+                <a target="_blank" href="https://github.com/Krazete/sgmpalette">Skullgirls Mobile Palette Editor</a>
+            </h1>
+            <div id="selection"></div>
+            <div class="flexbox">
+                <input type="checkbox" class="option text" id="background" checked>
+                <label for="background">Background</label>
+                <input type="checkbox" class="option text" id="line" checked>
+                <label for="line">Linework</label>
+                <input type="checkbox" class="option text" id="detail" checked>
+                <label for="detail">Detail</label>
+            </div>
+        </div>
+        <div id="sheet"></div>
+        <div id="download">Download</div>
+    </div>
+    <div class="section" id="right">
+        <div class="flexbox">
+            <input type="checkbox" class="option text" id="picker" checked>
+            <label for="picker">Auto Color Picker</label>
+        </div>
+        <div class="flexbox" id="blendmode">
+            <input type="radio" class="option text" name="blend" id="matte" checked>
+            <label for="matte">Matte</label>
+            <input type="radio" class="option text" name="blend" id="shiny">
+            <label for="shiny">Shiny</label>
+        </div>
+        <div id="palette"></div>
+        <div class="flexbox">
+            <input type="file" id="load">
+            <label for="load">Load</label>
+            <input type="button" id="save">
+            <label for="save">Save</label>
+        </div>
+    </div>
+</body>
+</html>
