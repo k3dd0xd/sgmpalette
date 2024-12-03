@@ -1,0 +1,1 @@
+# sgmpalette.github.io
